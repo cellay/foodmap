@@ -1,0 +1,47 @@
+* {
+ box-sizing: border-box;
+}
+
+.row {
+  margin-top: 30px;
+}
+
+#splash-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	background-color:#262626;
+	z-index: 9999;  /*Cuando usaba container no me dejaba ocultarlo*/
+}
+
+body {
+  background-color:#262626;
+  color: orange;
+  font-family: 'Raleway', sans-serif;
+}
+
+hr {
+  display: block;
+  border: 1px solid whitesmoke;
+  width: 90%;
+}
+
+iframe {
+	height: 300px;
+	width: 75%;
+}
+
+.rest {
+  height: 25vh;
+  margin: 30px 0;
+}
+
+.mouseover {
+  color: orange;
+  text-align: center;
+}

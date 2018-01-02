@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Foodmap</title>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<div class="" id="splash-effect">
+		<h1>Foodmap</h1>
+	</div>
+	<header class="d-flex justify-content-center ">
+		<h1 class="navbar-nav">Foodmap</h1>
+	</header>
+	<hr>
+	<section class="d-flex justify-content-center">
+		<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6Wjl1gMxg1pJHeUfMpQmg1Ykt0hZQ3-4&q=Laboratoria,Benavides+1180"
+		 allowfullscreen></iframe>
+	</section>
+	<section class="container-fluid">
+		<div class="row d-flex justify-content-center">
+			<div class="input-group col-10">
+				<input id="search-input" type="text" class="form-control" placeholder="Peruana, Internacional, Café...">
+				<div class="input-group-append">
+					<button class="btn btn-outline-secondary" type="button" aria-haspopup="true" aria-expanded="false">
+						<span class="fa fa-search" aria-hidden="true"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container-fluid">
+		<div class="row rest-list d-flex justify-content-around">
+		</div>
+	</section>
+
+	<!-- Info modal -->
+	<div class="modal fade" id="restModal" tabindex="-1" role="dialog" aria-labelledby="restModalTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="restModalTitle"></h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<iframe id="mapModal" src="" frameborder="0"></iframe>
+						<p id="priceModal"></p>
+						<p id="addressModal"></p>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+	 crossorigin="anonymous"></script>
+	<script src="js/data.js"></script>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
