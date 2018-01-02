@@ -36,7 +36,7 @@ $(document).ready(function () {
   //Completar modal
   $('.rest').click(function() {
     for (i = 0; i < data.length; i++) {
-      console.log(data.i);
+      console.log(data[i]);
       // if ($(this).data('id') === data[i].id) {
       //   alert('holi');
       // }
