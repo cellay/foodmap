@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Foodmap</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato|Leckerli+One" rel="stylesheet">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
@@ -18,11 +18,11 @@
 	<div class="" id="splash-effect">
 		<h1>Foodmap</h1>
 	</div>
-	<header class="d-flex justify-content-center ">
-		<h1 class="navbar-nav">Foodmap</h1>
+	<header class="navbar">
+		<h1 class="navbar-brand mb-0 col-12">Foodmap</h1>
 	</header>
 	<hr>
-	<section class="d-flex justify-content-center">
+	<section class="d-flex col-12 justify-content-center">
 		<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC6Wjl1gMxg1pJHeUfMpQmg1Ykt0hZQ3-4&q=Laboratoria,Benavides+1180"
 		 allowfullscreen></iframe>
 	</section>
@@ -47,23 +47,28 @@
 
 	<!-- Info modal -->
 	<div class="modal fade" id="restModal" tabindex="-1" role="dialog" aria-labelledby="restModalTitle" aria-hidden="true">
-			<div class="modal-dialog" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title" id="restModalTitle"></h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
-					<div class="modal-body">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title font-weight-bold"></h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body d-flex flex-column justify-content-center">
+					<div class="row d-flex justify-content-center">
 						<iframe id="mapModal" src="" frameborder="0"></iframe>
-						<p id="priceModal"></p>
-						<p id="addressModal"></p>
 					</div>
+					<div class="row">
+						<p class="col-6" id="priceModal"></p>
+						<p class="col-6" id="addressModal"></p>
 					</div>
+
 				</div>
 			</div>
 		</div>
+	</div>
+	</div>
 
 
 

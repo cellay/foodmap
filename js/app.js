@@ -35,12 +35,14 @@ $(document).ready(function () {
 
   //Completar modal
   $('.rest').click(function() {
-    for (i = 0; i < data.length; i++) {
-      console.log(data[i]);
-      // if ($(this).data('id') === data[i].id) {
-      //   alert('holi');
-      // }
-    }
+    var getRest = data[$(this).attr("id")];
+    var map = 'https://www.google.com/maps/embed/v1/directions?key=AIzaSyC6Wjl1gMxg1pJHeUfMpQmg1Ykt0hZQ3-4='+' &origin=Laboratoria,Benavides+1180&destination='+ getRest.name + getRest.address.split(' ').join('%20');
+    $('.modal-title').text(getRest.name);
+    $('#mapModal').attr("src", map);
+    $('#priceModal').text('El precio promedio por persona oscila entre '+getRest.price);
+    $('#addressModal').text('Av. '+getRest.address);
+
+
   });
 
 });

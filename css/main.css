@@ -15,25 +15,37 @@
   display: flex;
   justify-content: center;
   align-items: center;
-	background-color:#262626;
+  background: url('../assets/images/bw-splash.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 	z-index: 9999;  /*Cuando usaba container no me dejaba ocultarlo*/
 }
 
 body {
-  background-color:#262626;
-  color: orange;
-  font-family: 'Raleway', sans-serif;
+  background-color: whitesmoke;
+  color: brown;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h5 {
+  color: rgb(212, 61, 61);
+  font-family: 'Leckerli One', sans-serif;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 3.5em !important;
 }
 
 hr {
   display: block;
-  border: 1px solid whitesmoke;
+  border: 2px solid rosybrown;
   width: 90%;
 }
 
 iframe {
 	height: 300px;
-	width: 75%;
+	width: 70%;
 }
 
 .rest {
@@ -45,3 +57,4 @@ iframe {
   color: orange;
   text-align: center;
 }
+

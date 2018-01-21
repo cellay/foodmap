@@ -19,7 +19,7 @@ var data = {
 
   'CREPESWAFFLES' : {
     id : 'CREPESWAFFLES',
-    name : 'Crepes & Waffles',
+    name : 'Crepes and Waffles',
     image : 'assets/images/crepes.jpg',
     type : 'café',
     address : 'Vasco Núñez de Balboa 751, Miraflores',
